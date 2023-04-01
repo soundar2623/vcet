@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url();
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(2000);
+            });
+            $("#show").click(function(){
+                $("p").show(3000);
+            });
+        });
+    </script>
+    <p>this is my web page</p>
+    <p>about creating web page</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <style>
+        button{
+            font-size: 20px;
+            color: rgb(66, 13, 153);
+        }
+        button:hover{
+            background-color: rgb(5, 235, 243);
+        }
+        p{
+            color: rgb(69, 184, 16);
+        }
+        body{
+            background-image: url("ai\ art.jpg");
+            background-size: cover;
+        }
+    </style>
+    
+</body>
+</html>

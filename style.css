@@ -1,0 +1,62 @@
+h1{
+    color: rgb(0, 38, 255);
+    text-align: center;
+    border-radius:0 50px;
+    margin:0 20px;
+    padding:0 30px;
+
+}
+ul{
+    font-size: 10px;
+    color:aquamarine
+}
+ol{
+    font-size: 10px;
+    color: brown;
+}
+dd{
+    font-size: 10px;
+    color: rgb(0, 255, 85);
+}
+dt{
+    font-size: 10px;
+    color: rgb(0, 255, 85);
+}
+figure{
+    overflow: hidden;
+    text-align: center;
+}
+table,th,td{
+    border:2px solid blanchedalmond;
+    border-collapse:collapse ;
+    padding: 10px;
+}
+video{
+    width: 150px;
+    height: 100px;
+}
+label{
+    color: aqua;
+}
+legend{
+    color:aqua;
+}
+tr{
+    color: tomato;
+}
+.nxt{
+    color: rgb(204, 202, 207);
+}
+shadow{
+    font-size: 30px;
+    text-shadow:2px 2px 3px cornflowerblue;
+}
+#demo{
+    font-size: 20px;
+    color: rgb(178, 34, 154);
+
+}
+documentst.write{
+    font-size: 60px;
+    color: rgb(126, 126, 197);
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>function Test() {
+            document.write("Hello all");
+        }
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadetoggle();
+                $("#div2").fadetogle("slow");
+                $("#div3").fadetoggle("3000");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="deno"></p>
+    <p id="zeno"></p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">click</button>
+    <p id="demo"></p>
+    <p id="demo">Myparagraph</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='hello'">click</button>
+    <p id="demo">My paragraph</p>
+    <button type="button" onclick="document.getElementById('demo').style.backgroundColor= 'red';">click</button>
+    <button type="button" onclick="Test()">try it</button>
+    <script>
+        let x = 10;
+        let y = 5;
+        x += 6;//x=x+6("the x value is ")
+        document.write("the x value is:" + x + "<br>");
+    </script>
+    <script>
+        let a = 10;
+        let b = 5;
+        document.write(a > 5 && b < 10);
+        document.write("<br>");
+        document.write(a > 5 || b < 10);
+        document.write("<br>");
+        document.write(!(a > 5 && b < 10));
+    </script>
+    <script>
+        let text1 = "Hello";
+        let text2 = "world";
+        let text3 = text1 + text2;
+        document.write("<br>");
+        document.write(typeof 3.4);
+        document.write("<br>");
+        document.write(typeof "hai");
+        var m = myfunction(4, 3);
+        document.getElementById("deno").innerHTML = m;
+        function myfunction(a, b) {
+            return a * b;
+        }
+
+        const person1 = {
+            firstname: "Jhon",
+            lastname: "Doe"
+        }
+        const person = {
+            fullname: function () {
+                return this.firstname + " JohnDoe " + this.lastname;
+            }
+        }
+        document.getElementById("zeno").innerHTML = person.fullname.apply(person1);
+    </script>
+    <p id="keni"></p>
+    <script>
+        document.write(math.sqrt(16));
+        document.write("<br>");
+        document.write(math.pow(2))
+        document.write("<br>");
+        document.write("<br>");
+        document.write(math.cos(45));
+        document.write("<br>");
+        document.write(math.log(1));
+        document.write("<br>");
+        document.write(math.log(2));
+        document.write("<br>");
+        document.write(math.log(3));
+        document.write("<br>");
+    </script>
+    <p id="zeni"></p>
+    <script>
+        let answer1 = "it's all right";
+        let answer2 = "he is called'Jhonny";
+        let answer3 = "he is called'Jhonny";
+        document.getElementById("zeni").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+
+
+    </script>
+    <button>click to fade boxes</button><br><br>
+    <div id="div1" style="width:80px;height:80px;background-color:red;color:white">HI</div>
+    <div id="div2" style="width: 80px; height: 80px; background-color:green;color:white">HELLO</div>
+    <div id="div3" style="width: 80px ;height: 80px ;background-color:blue;color:white">WELCOME</div>
+
+</body>
+
+</html>

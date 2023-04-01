@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>click to fade boxes</button><br><br>
+    <div id="div1" style="width:80px;height:80px;background-color:red;color:white">HI</div>
+    <div id="div2" style="width: 80px; height: 80px; background-color:green;color:white">HELLO</div>
+    <div id="div3" style="width: 80px ;height: 80px ;background-color:blue;color:white">WELCOME</div>
+    <script src="./jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            });
+        });
+    </script>
+    <style>
+        body{
+            background-image: url("jelly-3.webp");
+        }
+    </style>
+</body>
+
+</html>
